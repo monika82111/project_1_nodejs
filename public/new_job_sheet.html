@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Job Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, 
+        .form-group textarea, 
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-group button:hover {
+            background-color: #0055a5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">CREATE NEW JOB SHEET</div>
+
+        <div class="form-group">
+            <label for="clientName">Client Name</label>
+            <input type="text" id="clientName" placeholder="Enter client name">
+        </div>
+
+        <div class="form-group">
+            <label for="contactInfo">Contact Info (Phone)</label>
+            <input type="text" id="contactInfo" placeholder="Enter contact info (Phone)">
+        </div>
+
+        <div class="form-group">
+            <label for="receivedDate">Received Date</label>
+            <input type="date" id="receivedDate">
+        </div>
+
+        <div class="form-group">
+            <label for="inventoryReceived">Inventory Received</label>
+            <input type="text" id="inventoryReceived" placeholder="Enter inventory received">
+        </div>
+
+        <div class="form-group">
+            <label for="uploadInventory">Upload Inventory Image/Document/Video</label>
+            <input type="file" id="uploadInventory">
+        </div>
+
+        <div class="form-group">
+            <label for="reportedIssues">Reported Issues</label>
+            <textarea id="reportedIssues" placeholder="Describe reported issues"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="clientNotes">Client Notes</label>
+            <textarea id="clientNotes" placeholder="Enter client notes"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="assignedTechnician">Assigned Technician</label>
+            <input type="text" id="assignedTechnician" placeholder="Enter assigned technician name">
+        </div>
+
+        <div class="form-group">
+            <label for="deadline">Deadline</label>
+            <input type="date" id="deadline">
+        </div>
+
+        <div class="form-group">
+            <label for="estimatedAmount">Estimated Amount</label>
+            <input type="text" id="estimatedAmount" placeholder="Enter estimated amount">
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="pending">Pending</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Save Job Sheet</button>
+        </div>
+    </div>
+
+</body>
+</html>

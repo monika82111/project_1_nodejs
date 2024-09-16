@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Job Sheet</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.job-sheet-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blue-header {
+    background-color: #003c8f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-sheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.job-sheet-table td {
+    padding: 5px;
+    display: block; /* Ensures each td content goes on a new line */
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+    margin-bottom: 2px; /* Add space between label and value */
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+.action-buttons {
+
+    margin: 20px 0px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.save-btn {
+    background-color: #003c8f;
+    color: white;
+    width: 100%;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #003c8f;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Centering the Cancel button */
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.centered-button .cancel-btn {
+    width: 150px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="job-sheet-container">
+        <div class="header blue-header">EDIT JOB SHEET</div>
+        <form>
+            <table class="job-sheet-table">
+                <tr>
+                    <td>Client Name:</td>
+                    <td><input type="text" value="nandini goswami" readonly></td>
+                </tr>
+                <tr>
+                    <td>Contact Info:</td>
+                    <td><input type="text" value="1234567890" readonly></td>
+                </tr>
+                <tr>
+                    <td>Received Date:</td>
+                    <td><input type="date" value="2024-09-05"></td>
+                </tr>
+                <tr>
+                    <td>Inventory Received:</td>
+                    <td><input type="text" value="mouse"></td>
+                </tr>
+                <tr>
+                    <td>Inventory Image/Document/Video:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Reported Issues:</td>
+                    <td><textarea>hgh</textarea></td>
+                </tr>
+                <tr>
+                    <td>Client Notes:</td>
+                    <td><textarea>f</textarea></td>
+                </tr>
+                <tr>
+                    <td>Assigned Technician:</td>
+                    <td><input type="text" value="f"></td>
+                </tr>
+                <tr>
+                    <td>Estimated Amount:</td>
+                    <td><input type="text" value="None"></td>
+                </tr>
+                <tr>
+                    <td>Deadline:</td>
+                    <td><input type="date" value="2024-09-18"></td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td>
+                        <select>
+                            <option value="in-progress" selected>In Progress</option>
+                            <option value="pending">Pending</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="action-buttons">
+                <button type="submit" class="btn save-btn">Save Changes</button>
+                <button type="button" class="btn cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

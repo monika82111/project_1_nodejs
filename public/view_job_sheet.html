@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Job Sheet</title>
+   <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.job-sheet-container {
+    width: 60%; /* Adjusted width to better fit the layout */
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: #003366; /* Dark blue header */
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 24px;
+    margin: 0;
+}
+
+.job-sheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.job-sheet-table td {
+    padding: 12px 15px; /* Padding for better spacing */
+    border-bottom: 1px solid #ddd;
+}
+
+.job-sheet-table tr:first-child td {
+    padding-top: 20px;
+}
+
+td:first-child {
+    background-color: #003366;;
+    font-weight: bold;
+    color: white; /* Dark blue color for labels */
+    width: 40%; /* Increased width for the labels */
+    text-align: right; /* Right-aligned labels */
+    padding-right: 15px; /* Spacing between labels and values */
+}
+
+td:last-child {
+    text-align: left;
+    background-color: rgb(243, 239, 236);
+}
+
+.note-section {
+    margin: 20px 0;
+}
+
+.note-section label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #003366; /* Dark blue for labels */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003366; /* Dark blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;   
+}
+
+button:hover {
+    background-color: #002244; /* Darker blue on hover */
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #003366; /* Grey button for "Back" */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 48%;
+}
+
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.save-note-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.save-note-button button {
+    background-color: #003366; /* Dark blue save button */
+}
+
+.save-note-button button:hover {
+    background-color: #002244;
+}
+.note-section button{
+    width: 100%;
+}
+.action-buttons button{
+    background-color: #fff;
+    color:#002244;
+    margin-right:5px;
+    padding: 0px;
+
+}
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+    color: #777;
+}
+
+   </style>
+</head>
+<body>
+    <div class="job-sheet-container">
+        <h2>VIEW JOB SHEET</h2>
+        <table class="job-sheet-table">
+            <tr>
+                <td>Client Name:</td>
+                <td>nandini goswami</td>
+            </tr>
+            <tr>
+                <td>Contact Info:</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>Received Date:</td>
+                <td>2024-09-05</td>
+            </tr>
+            <tr>
+                <td>Inventory Received:</td>
+                <td>mouse</td>
+            </tr>
+            <tr>
+                <td>Inventory Image/Document/Video:</td>
+                <td><a href="#">View File</a></td>
+            </tr>
+            <tr>
+                <td>Reported Issues:</td>
+                <td>hgh</td>
+            </tr>
+            <tr>
+                <td>Client Notes:</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>Assigned Technician:</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>Estimated Amount:</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Deadline:</td>
+                <td>2024-09-18</td>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td>in-progress</td>
+            </tr>
+        </table>
+
+        <div class="note-section">
+            <label for="note">Add or Update Note:</label>
+            <textarea id="note" rows="4"></textarea>
+            <button>Save Note</button>
+        </div>
+
+        <div class="action-buttons">
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+
+        <button class="back-button">Back</button>
+    </div>
+</body>
+</html>

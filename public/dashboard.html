@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Management Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">HARDIK TRADERS - CLIENT MANAGEMENT DASHBOARD</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by Client Name or ID..." />
+            <button>Search</button>
+        </div>
+
+        <a href="/new_job_sheet" class="btn btn-add">New Job Sheet</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Client ID</th>
+                    <th>Client Name</th>
+                    <th>Contact Info</th>
+                    <th>Received Date</th>
+                    <th>Inventory Received</th>
+                    <th>Reported Issues</th>
+                    <th>Client Notes</th>
+                    <th>Assigned Technician</th>
+                    <th>Estimated Amount</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>nand9953</td>
+                    <td>nandini goswami</td>
+                    <td>1234567890</td>
+                    <td>2024-09-05</td>
+                    <td>mouse</td>
+                    <td>hgh</td>
+                    <td>f</td>
+                    <td>f</td>
+                    <td>None</td>
+                    <td>2024-09-18</td>
+                    <td>in-progress</td>
+                    <td class="action-column">
+                        <div class="action-buttons">
+                            <a href="/view_job_sheet" class="btn btn-view">View</a>
+                            <a href="/edit_job_sheet" class="btn btn-edit">Edit</a>
+                            <button class="btn btn-delete">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>dfgd5644</td>
+                    <td>dfgdgfh</td>
+                    <td>5645645644</td>
+                    <td>2024-09-13</td>
+                    <td>gfs</td>
+                    <td>dfgfhgh</td>
+                    <td>dfg</td>
+                    <td>sdfg</td>
+                    <td>43534.0</td>
+                    <td>2024-09-12</td>
+                    <td>pending</td>
+                    <td class="action-column">
+                        <div class="action-buttons">
+                            <a href="/view_job_sheet" class="btn btn-view">View</a>
+                            <a href="/edit_job_sheet" class="btn btn-edit">Edit</a>
+                            <button class="btn btn-delete">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">© 2024 Hardik Traders</div>
+    </div>
+</body>
+</html>
